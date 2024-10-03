@@ -1,16 +1,14 @@
-// "use client";
 
-// import { useEffect, useState } from 'react';
-
-import GET from '../app/api/posts/route';
-import PostList from '../app/ui/PostsList';
+import { CreateTodoForm } from "@/components/CreatePostForm";
+import { PostList } from '@/components/PostsList';
 
 export default function Home() {
-  const fetchPosts = async () => {
-    const data = await GET();
-    console.log(data);
-  };
 
-
-  return <PostList posts={fetchPosts}></PostList>
+  return <div className='container mx-auto'>
+    <h1 className="text-center text-3xl font-bold mb-3">Posts APP</h1>
+    <div className="mb-3">
+      <CreateTodoForm />
+    </div>
+    <PostList></PostList>
+  </div >
 }
