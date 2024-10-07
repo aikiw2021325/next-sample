@@ -9,7 +9,12 @@ npm run dev
 ```
 
 ## prisma command
+prisma studio start
 ```bash
 npx prisma studio
+```
+prisma migration
+```bash
+npx prisma migrate dev --name xxxx
 ```
 
