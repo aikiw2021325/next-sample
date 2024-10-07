@@ -7,10 +7,8 @@ import { Headder } from "@/components/headder/Headder";
 export default function Home() {
 
   return (
-    <body className="bg-gray-100">
-      <header className="h-4 bg-gray-200 text-white">
-      </header>
-      <main className="p-2">
+    <div className="bg-gray-100 min-h-[100vh]">
+      <div className="p-2">
         <div className="container mx-auto w-full">
           <div className="flex flex-row items-center justify-between">
             <Headder message="お客様情報"></Headder>
@@ -25,7 +23,7 @@ export default function Home() {
             <NoveltyMissonCard progress={1}></NoveltyMissonCard>
           </div>
         </div>
-      </main>
-    </body>
+      </div>
+    </div>
   );
 }
