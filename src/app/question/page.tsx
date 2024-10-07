@@ -5,6 +5,7 @@ import { NoveltyMissonCard } from "@/components/card/NoveltyMissonCard";
 import { Headder } from "@/components/headder/Headder";
 
 export default function Home() {
+
   return (
     <body className="bg-gray-100">
       <header className="h-4 bg-gray-200 text-white">
@@ -15,7 +16,7 @@ export default function Home() {
             <Headder message="お客様情報"></Headder>
             <LogoutButton></LogoutButton>
           </div>
-          <CustomerCard customer_id={'9999'} customer_name={'南日本情報処理センター'}></CustomerCard>
+          <CustomerCard customer_id={1362} login_date={'20240516'}></CustomerCard>
           <div className="flex flex-row items-center justify-between">
             <Headder message="ミッション"></Headder>
             <HelpButton></HelpButton>
