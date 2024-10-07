@@ -3,8 +3,8 @@ import { LogoutButton } from "@/components/button/LogoutButton";
 import { CustomerCard } from "@/components/card/CustomerCard";
 import { NoveltyMissonCard } from "@/components/card/NoveltyMissonCard";
 import { Headder } from "@/components/headder/Headder";
-export default function Home() {
 
+export default function Home() {
   return (
     <body className="bg-gray-100">
       <header className="h-4 bg-gray-200 text-white">
