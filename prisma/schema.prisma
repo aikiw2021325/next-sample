@@ -19,3 +19,16 @@ model Post {
   content   String?
   createdAt DateTime @default(now())
 }
+
+model User {
+  user_id  Int 
+  login_day String
+  login_time String @default("")
+  logout_time String @default("")
+  company_name String
+  is_qustionnaire Boolean @default(false)
+  is_lottery Boolean @default(false)
+  is_personal_information Boolean @default(false)
+  is_delete Boolean @default(false)
+  @@id([user_id, login_day])
+}
