@@ -31,7 +31,7 @@ export function NoveltyMissonCard(props: noveltyMissionProps) {
   }
 
   return (
-    <div className="px-5 py-5 rounded-lg shadow-lg bg-white w-full overflow-hidden">
+    <div className="px-5 py-5 rounded-md shadow-lg bg-white w-full overflow-hidden">
       <div className="flex flex-row gap-x-2">
         <div className='w-12 sm:w-16 h-12 sm:h-16 rounded-full object-cover shrink-0'>
           <WalkIcon></WalkIcon>
