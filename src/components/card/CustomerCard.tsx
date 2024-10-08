@@ -13,7 +13,7 @@ export async function CustomerCard(props: loginUserProps) {
     // customer card
     <div className="w-full h-hull mx-auto rounded-md shadow-lg overflow-hidden">
       {/* card headder */}
-      <div className="bg-blue-500 h-6">
+      <div className="bg-blue-600 h-6">
         <p className="px-2 text-white text-md sm:text-lg font-bold">Next-MIC 2024</p>
       </div>
       {/* card content */}

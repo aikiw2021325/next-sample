@@ -3,6 +3,7 @@ import { LogoutButton } from "@/components/button/LogoutButton";
 import { QuestionAnserButton } from "@/components/button/QuestionAnswerButton";
 import { CustomerCard } from "@/components/card/CustomerCard";
 import { NoveltyMissonCard } from "@/components/card/NoveltyMissonCard";
+import { QuestionMissonCard } from "@/components/card/QuestionMissonCard";
 import { Headder } from "@/components/headder/Headder";
 
 export default function Home() {
@@ -22,6 +23,10 @@ export default function Home() {
           </div>
           <div className="flex flex-row">
             <NoveltyMissonCard progress={1}></NoveltyMissonCard>
+          </div>
+          <div className="my-2"></div>
+          <div className="flex flex-row">
+            <QuestionMissonCard progress={0}></QuestionMissonCard>
           </div>
           <Headder message="アクション"></Headder>
           <QuestionAnserButton></QuestionAnserButton>
