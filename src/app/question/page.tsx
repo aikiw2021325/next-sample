@@ -1,6 +1,8 @@
 import { HelpButton } from "@/components/button/HelpButton";
 import { LogoutButton } from "@/components/button/LogoutButton";
+import NoveltyButton from "@/components/button/NoveltyButton";
 import { QuestionAnserButton } from "@/components/button/QuestionAnswerButton";
+import QuestionButton from "@/components/button/QuestionButton";
 import { CustomerCard } from "@/components/card/CustomerCard";
 import { NoveltyMissonCard } from "@/components/card/NoveltyMissonCard";
 import { QuestionMissonCard } from "@/components/card/QuestionMissonCard";
@@ -21,13 +23,17 @@ export default function Home() {
             <Headder message="ミッション"></Headder>
             <HelpButton></HelpButton>
           </div>
+          <div className="my-2"></div>
           <div className="flex flex-row">
             <NoveltyMissonCard progress={1}></NoveltyMissonCard>
+            <NoveltyButton></NoveltyButton>
           </div>
           <div className="my-2"></div>
           <div className="flex flex-row">
             <QuestionMissonCard progress={0}></QuestionMissonCard>
+            <QuestionButton></QuestionButton>
           </div>
+          <div className="my-2"></div>
           <Headder message="アクション"></Headder>
           <QuestionAnserButton></QuestionAnserButton>
         </div>
