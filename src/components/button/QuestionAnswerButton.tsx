@@ -6,7 +6,7 @@ export function QuestionAnserButton() {
   const router = useRouter();
 
   const logoutClick = () => {
-    router.push('/');  // "/"ページへ遷移
+    router.push('/survey');  // "/"ページへ遷移
   };
 
   return (

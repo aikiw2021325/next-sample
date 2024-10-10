@@ -1,4 +1,4 @@
-import { readLoginUserInfo } from "@/app/question/service/user";
+import { readLoginUserInfo } from "@/app/service/user";
 
 type loginUserProps = {
   customer_id: number,
