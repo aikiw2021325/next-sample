@@ -2,9 +2,13 @@
 const nextConfig = {
     webpack: (config) => {
         config.watchOptions = {
-            poll: 300,
-            aggregateTimeout: 300,
+            poll: 1000,
         };
+        config.module.rules.push({
+            test: /\.svg$/,
+            use: ["@svgr/webpack"]
+        });
+
         return config;
     },
 };
