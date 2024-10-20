@@ -1,16 +1,18 @@
 "use client"
 
 import { ConfirmButton } from "@/components/button/ConfirmButton";
+import { TitleCard } from "@/components/card/TitleCard";
 
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4">
       <div className="bg-white rounded-lg shadow-lg p-6 max-w-screen-lg w-full">
-        <div className="bg-blue-500 text-white p-4 rounded-t-lg">
+        {/* <div className="bg-blue-500 text-white p-4 rounded-t-lg">
           <h2 className="text-xl font-bold">アンケート</h2>
           <p className="text-sm">Next-MIC 2024についてお聞かせください</p>
-        </div>
+        </div> */}
+        <TitleCard title={'アンケート'} content={'Next-MIC 2024についてお聞かせください'}></TitleCard>
 
         <form className="p-4 space-y-6">
           {/* 質問1 */}
