@@ -17,4 +17,8 @@ prisma migration
 ```bash
 npx prisma migrate dev --name xxxx
 ```
+prisma client update
+```bash
+npx prisma generate
+```
 
